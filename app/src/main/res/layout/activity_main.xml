@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context=".activity.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/msg_instructions" />
+
+        <Button
+            android:id="@+id/btnSendEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/btnBackground"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/btn_send_event"
+            android:textAllCaps="false"
+            android:textColor="#797979" />
+
+        <Button
+            android:id="@+id/btnException"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/btnBackground"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/btn_exception_tracking"
+            android:textAllCaps="false"
+            android:textColor="#797979" />
+
+        <Button
+            android:id="@+id/btnAppCrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/btnBackground"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/btn_app_crash"
+            android:textAllCaps="false"
+            android:textColor="#797979" />
+
+        <Button
+            android:id="@+id/btnLoadFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/btnBackground"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/btn_load_fragment"
+            android:textAllCaps="false"
+            android:textColor="#797979" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
